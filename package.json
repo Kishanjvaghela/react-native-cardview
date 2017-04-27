@@ -1,22 +1,38 @@
+
 {
-	"name": "Card",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
-	},
-	"dependencies": {
-		"react": "16.0.0-alpha.6",
-		"react-native": "0.43.4"
-	},
-	"devDependencies": {
-		"babel-jest": "19.0.0",
-		"babel-preset-react-native": "1.9.1",
-		"jest": "19.0.2",
-		"react-test-renderer": "16.0.0-alpha.6"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  "name": "react-native-cardview",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kishanjvaghela/react-native-card-view.git"
+  },
+  "description": "A react native card view",
+  "keywords": [
+    "react card",
+    "react-native",
+    "react-native-card-view",
+    "react native card",
+    "card",
+    "view",
+    "react-component",
+    "react-native",
+    "ios",
+    "android"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "Kishan Vaghela (kishanjvaghela@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kishanjvaghela/react-native-card-view/issues"
+  },
+  "homepage": "https://github.com/Kishanjvaghela/react-native-card-view",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  }
 }
