@@ -19,7 +19,7 @@ export default class App extends Component {
         <View flexDirection='row'>
         <CardView
           cardElevation={0}
-          cardMaxElevation={30}
+          cardMaxElevation={0}
           cornerRadius={5}
           style={styles.card}>
           <Text style={styles.text}>
@@ -27,72 +27,72 @@ export default class App extends Component {
           </Text>
         </CardView>
         <CardView
-          cardElevation={5}
-          cardMaxElevation={30}
+          cardElevation={1}
+          cardMaxElevation={1}
           cornerRadius={5}
           style={styles.card}>
           <Text style={styles.text}>
-              Elevation 5
+              Elevation 1
           </Text>
         </CardView>
       </View>
       <View flexDirection='row'>
       <CardView
-        cardElevation={10}
-        cardMaxElevation={30}
+        cardElevation={2}
+        cardMaxElevation={2}
         cornerRadius={5}
         style={styles.card}>
         <Text style={styles.text}>
-            Elevation 10
+            Elevation 2
         </Text>
       </CardView>
       <CardView
-        cardElevation={15}
-        cardMaxElevation={30}
+        cardElevation={3}
+        cardMaxElevation={3}
         cornerRadius={5}
         style={styles.card}>
         <Text style={styles.text}>
-            Elevation 15
-        </Text>
-      </CardView>
-      </View>
-      <View flexDirection='row'>
-      <CardView
-        cardElevation={20}
-        cardMaxElevation={30}
-        cornerRadius={5}
-        style={styles.card}>
-        <Text style={styles.text}>
-            Elevation 20
-        </Text>
-      </CardView>
-      <CardView
-        cardElevation={25}
-        cardMaxElevation={30}
-        cornerRadius={5}
-        style={styles.card}>
-        <Text style={styles.text}>
-            Elevation 25
+            Elevation 3
         </Text>
       </CardView>
       </View>
       <View flexDirection='row'>
       <CardView
-        cardElevation={30}
-        cardMaxElevation={30}
+        cardElevation={4}
+        cardMaxElevation={4}
         cornerRadius={5}
         style={styles.card}>
         <Text style={styles.text}>
-            Elevation 30
+            Elevation 4
         </Text>
       </CardView>
       <CardView
-        cardElevation={35}
-        cardMaxElevation={30}
+        cardElevation={5}
+        cardMaxElevation={5}
         cornerRadius={5}
         style={styles.card}>
         <Text style={styles.text}>
-            Elevation 35
+            Elevation 5
+        </Text>
+      </CardView>
+      </View>
+      <View flexDirection='row'>
+      <CardView
+        cardElevation={6}
+        cardMaxElevation={6}
+        cornerRadius={5}
+        style={styles.card}>
+        <Text style={styles.text}>
+            Elevation 6
+        </Text>
+      </CardView>
+      <CardView
+        cardElevation={7}
+        cardMaxElevation={7}
+        cornerRadius={5}
+        style={styles.card}>
+        <Text style={styles.text}>
+            Elevation 7
         </Text>
       </CardView>
       </View>
