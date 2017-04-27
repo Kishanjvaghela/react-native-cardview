@@ -5,7 +5,8 @@ var iface = {
   propTypes: {
      cornerRadius: PropTypes.number,
      cardElevation: PropTypes.number,
-    ...View.propTypes // include the default view properties
+cardMaxElevation: PropTypes.number,
+    ...View.propTypes, // include the default view properties
   },
 };
 module.exports = requireNativeComponent('RNCardView', iface);

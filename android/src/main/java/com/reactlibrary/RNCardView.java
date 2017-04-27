@@ -4,6 +4,8 @@ import android.content.Context;
 import android.support.v7.widget.CardView;
 import android.util.AttributeSet;
 
+import com.facebook.react.uimanager.PixelUtil;
+
 /**
  * Created by kishan on 26/4/17.
  */
@@ -28,5 +30,13 @@ public class RNCardView extends CardView {
 
     public void setRnElevation(float elevation) {
         setCardElevation(elevation);
+    }
+
+    public void setRnMaxElevation(float elevation) {
+        setMaxCardElevation(elevation);
+    }
+
+    public void setRnBackgroundColor(int color) {
+        setCardBackgroundColor(color);
     }
 }

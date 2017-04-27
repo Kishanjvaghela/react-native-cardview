@@ -1,5 +1,9 @@
 package com.reactlibrary;
 
+import android.graphics.Color;
+import android.text.TextUtils;
+import android.util.Log;
+
 import com.facebook.react.uimanager.PixelUtil;
 import com.facebook.react.uimanager.ThemedReactContext;
 import com.facebook.react.uimanager.ViewGroupManager;
@@ -29,6 +33,17 @@ public class RNCardViewManager extends ViewGroupManager<RNCardView> {
 
     @ReactProp(name = "cardElevation", defaultFloat = 0f)
     public void setCardElevation(RNCardView view, float elevation) {
-        view.setRnElevation(PixelUtil.toPixelFromDIP(elevation));
+        Log.d("card", "setCardElevation() called with: view = [" + view + "], elevation = [" + elevation + "]");
+        view.setRnElevation(elevation);
+    }
+
+    @ReactProp(name = "cardMaxElevation", defaultFloat = 0f)
+    public void setCardMaxElevation(RNCardView view, float elevation) {
+        view.setRnMaxElevation(elevation);
+    }
+
+    @ReactProp(name = "backgroundColor")
+    public void setCardBackgroundColor(RNCardView view, int color) {
+        view.setRnBackgroundColor(color);
     }
 }
