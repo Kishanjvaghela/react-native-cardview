@@ -16,18 +16,87 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <CardView elevation={2}>
-          <Text style={styles.welcome}>
-            Welcome to React Native!
+        <View flexDirection='row'>
+        <CardView
+          cardElevation={0}
+          cardMaxElevation={30}
+          cornerRadius={5}
+          style={styles.card}>
+          <Text style={styles.text}>
+              Elevation 0
           </Text>
         </CardView>
-        <Text style={styles.instructions}>
-          To get started, edit index.android.js
+        <CardView
+          cardElevation={5}
+          cardMaxElevation={30}
+          cornerRadius={5}
+          style={styles.card}>
+          <Text style={styles.text}>
+              Elevation 5
+          </Text>
+        </CardView>
+      </View>
+      <View flexDirection='row'>
+      <CardView
+        cardElevation={10}
+        cardMaxElevation={30}
+        cornerRadius={5}
+        style={styles.card}>
+        <Text style={styles.text}>
+            Elevation 10
         </Text>
-        <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu
+      </CardView>
+      <CardView
+        cardElevation={15}
+        cardMaxElevation={30}
+        cornerRadius={5}
+        style={styles.card}>
+        <Text style={styles.text}>
+            Elevation 15
         </Text>
+      </CardView>
+      </View>
+      <View flexDirection='row'>
+      <CardView
+        cardElevation={20}
+        cardMaxElevation={30}
+        cornerRadius={5}
+        style={styles.card}>
+        <Text style={styles.text}>
+            Elevation 20
+        </Text>
+      </CardView>
+      <CardView
+        cardElevation={25}
+        cardMaxElevation={30}
+        cornerRadius={5}
+        style={styles.card}>
+        <Text style={styles.text}>
+            Elevation 25
+        </Text>
+      </CardView>
+      </View>
+      <View flexDirection='row'>
+      <CardView
+        cardElevation={30}
+        cardMaxElevation={30}
+        cornerRadius={5}
+        style={styles.card}>
+        <Text style={styles.text}>
+            Elevation 30
+        </Text>
+      </CardView>
+      <CardView
+        cardElevation={35}
+        cardMaxElevation={30}
+        cornerRadius={5}
+        style={styles.card}>
+        <Text style={styles.text}>
+            Elevation 35
+        </Text>
+      </CardView>
+      </View>
+
       </View>
     );
   }
@@ -36,14 +105,20 @@ export default class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#EEEEEE',
   },
-  welcome: {
-    fontSize: 20,
+  card: {
+    backgroundColor: 'white',
+    alignItems: 'center',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    flex: 1,
+    margin: 10
+  },
+  text: {
     textAlign: 'center',
     margin: 10,
+    height: 75
   },
   instructions: {
     textAlign: 'center',
