@@ -29,13 +29,12 @@ public class RNCardView extends CardView {
     }
 
     public void setRnElevation(float elevation) {
-        setCardElevation(elevation);
+        setCardElevation(PixelUtil.toPixelFromDIP(elevation));
     }
 
     public void setRnMaxElevation(float elevation) {
-        setMaxCardElevation(elevation);
+        setMaxCardElevation(PixelUtil.toPixelFromDIP(elevation));
     }
-
     public void setRnBackgroundColor(int color) {
         setCardBackgroundColor(color);
     }
