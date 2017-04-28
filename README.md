@@ -1,5 +1,9 @@
 
 # react-native-card-view
+Native CardView that compatible for iOS and Android( both lollipop and pre-lolipop).
+
+##### [Material Design Card Spec](https://www.google.com/design/spec/components/cards.html)
+##### [CardView Android Documentation](http://developer.android.com/intl/zh-tw/reference/android/support/v7/widget/CardView.html)
 
 ## Getting started
 
@@ -11,13 +15,9 @@
 
 ### Manual installation
 
-
 #### iOS
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-card-view` and add `RNCardView.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNCardView.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+Dont need to setup
 
 #### Android
 
@@ -33,21 +33,31 @@
   	```
       compile project(':react-native-card-view')
   	```
-
-#### Windows
-[Read it! :D](https://github.com/ReactWindows/react-native)
-
-1. In Visual Studio add the `RNCardView.sln` in `node_modules/react-native-card-view/windows/RNCardView.sln` folder to their solution, reference from their app.
-2. Open up your `MainPage.cs` app
-  - Add `using Com.Reactlibrary.RNCardView;` to the usings at the top of the file
-  - Add `new RNCardViewPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
-
 ## Usage
+##### [Example](https://github.com/Kishanjvaghela/react-native-cardview-example)
 ```javascript
-import RNCardView from 'react-native-card-view';
-
-// TODO: What to do with the module?
-RNCardView;
+import CardView from 'react-native-cardview'
+<CardView
+          cardElevation={2}
+          cardMaxElevation={2}
+          cornerRadius={5}>
+          <Text>
+              Elevation 0
+          </Text>
+</CardView>
 ```
+## Attributes
+
+* **cardElevation**
+
+An attribute to set the elevation of the card. This will increase the 'drop-shadow' of the card.
+There can be some performance impact when using a very high elevation value.
+
+* **cardMaxElevation**
+
+An attribute to support shadow on pre-lollipop device in android. [cardMaxElevation](http://developer.android.com/intl/zh-tw/reference/android/support/v7/widget/CardView.html)
+
+
+* **cornerRadius**
+An attribute to set the radius of the card.
   
