@@ -1,5 +1,6 @@
 
-# react-native-card-view
+# react-native-card-view [![npm version](https://img.shields.io/npm/v/react-native-cardview.svg?style=flat)](https://www.npmjs.com/package/react-native-cardview)
+
 Native CardView that compatible for iOS and Android( both lollipop and pre-lolipop).
 
 ##### [Material Design Card Spec](https://www.google.com/design/spec/components/cards.html)
