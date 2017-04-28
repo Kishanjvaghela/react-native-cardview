@@ -34,6 +34,9 @@ Dont need to setup
       compile project(':react-native-card-view')
   	```
 ## Usage
+
+![N|Example](https://github.com/Kishanjvaghela/react-native-card-view/raw/master/docs/Example-Snapshot.png)
+
 ##### [Example](https://github.com/Kishanjvaghela/react-native-cardview-example)
 ```javascript
 import CardView from 'react-native-cardview'
