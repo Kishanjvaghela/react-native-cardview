@@ -3,8 +3,12 @@
 
 Native CardView that compatible for iOS and Android( both lollipop and pre-lolipop).
 
+##### [Website](https://kishanjvaghela.github.io/react-native-cardview/)
+##### [NPM url](https://www.npmjs.com/package/react-native-cardview)
 ##### [Material Design Card Spec](https://www.google.com/design/spec/components/cards.html)
 ##### [CardView Android Documentation](http://developer.android.com/intl/zh-tw/reference/android/support/v7/widget/CardView.html)
+
+
 
 ## Getting started
 
