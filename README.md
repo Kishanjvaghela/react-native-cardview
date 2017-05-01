@@ -12,11 +12,11 @@ Native CardView that compatible for iOS and Android( both lollipop and pre-lolip
 
 ## Getting started
 
-`$ npm install react-native-card-view --save`
+`$ npm install react-native-cardview --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-card-view`
+`$ react-native link react-native-cardview`
 
 ### Manual installation
 
@@ -40,7 +40,7 @@ Dont need to setup
   	```
 ## Usage
 
-![N|Example](https://github.com/Kishanjvaghela/react-native-card-view/raw/master/docs/Example-Snapshot.png)
+![N|Example](https://github.com/Kishanjvaghela/react-native-cardview/raw/master/docs/Example-Snapshot.png)
 
 ##### [Example](https://github.com/Kishanjvaghela/react-native-cardview-example)
 ```javascript
