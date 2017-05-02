@@ -22,9 +22,18 @@ export default class App extends Component {
           cardMaxElevation={0}
           cornerRadius={5}
           style={styles.card}>
-          <Text style={styles.text}>
-              Elevation 0
-          </Text>
+          <View>
+            <Text style={{backgroundColor:'yellow'}}>
+                Elevation 0
+            </Text>
+            <Text >
+                Elevation 1
+            </Text>
+            <Text >
+                Ele
+            </Text>
+          </View>
+
         </CardView>
         <CardView
           cardElevation={1}
