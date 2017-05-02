@@ -1,10 +1,11 @@
 
-# react-native-card-view [![npm version](https://img.shields.io/npm/v/react-native-cardview.svg?style=flat)](https://www.npmjs.com/package/react-native-cardview)
+# react-native-card-view [![npm version](https://img.shields.io/npm/v/react-native-cardview.svg?style=flat)](https://www.npmjs.com/package/react-native-cardview) [![npm downloads](https://img.shields.io/npm/dm/react-native-cardview.svg?style=flat-square)](https://www.npmjs.com/package/react-native-cardview)
+
+[![npm](https://nodei.co/npm/react-native-cardview.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-native-cardview)
 
 Native CardView that compatible for iOS and Android( both lollipop and pre-lolipop).
 
 ##### [Website](https://kishanjvaghela.github.io/react-native-cardview/)
-##### [NPM url](https://www.npmjs.com/package/react-native-cardview)
 ##### [Material Design Card Spec](https://www.google.com/design/spec/components/cards.html)
 ##### [CardView Android Documentation](http://developer.android.com/intl/zh-tw/reference/android/support/v7/widget/CardView.html)
 
