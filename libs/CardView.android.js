@@ -10,3 +10,26 @@ cardMaxElevation: PropTypes.number,
   },
 };
 module.exports = requireNativeComponent('RNCardView', iface);
+
+// const RNCardView = requireNativeComponent('RNCardView', CardView, {});
+// class CardView extends Component {
+//   render() {
+//     return (
+//       <RNCardView
+//         {...this.props}
+//       >
+// 	{this.props.children}
+//       </RNCardView>
+//     );
+//   }
+// }
+//
+// CardView.propTypes = {
+//   ...View.propTypes,
+//   cornerRadius: PropTypes.number,
+//   cardElevation: PropTypes.number,
+//   cardMaxElevation: PropTypes.number,
+// };
+//
+//
+// export default CardView;
