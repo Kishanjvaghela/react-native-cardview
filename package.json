@@ -32,7 +32,7 @@
     "url": "https://github.com/Kishanjvaghela/react-native-card-view/issues"
   },
   "homepage": "https://github.com/Kishanjvaghela/react-native-card-view",
-  "peerDependencies": {
+  "devDependencies": {
     "react-native": "^0.41.2"
   }
 }
