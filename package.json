@@ -9,7 +9,7 @@
   "dependencies": {
     "react": "16.0.0-alpha.6",
     "react-native": "0.43.4",
-    "react-native-cardview": "^1.0.3"
+    "react-native-cardview": "^1.0.4"
   },
   "devDependencies": {
     "babel-jest": "19.0.0",

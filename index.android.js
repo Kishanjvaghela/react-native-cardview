@@ -7,5 +7,6 @@
 import React from 'react';
 import { AppRegistry } from 'react-native';
 import App from './App';
+import Test from './Test';
 
-AppRegistry.registerComponent('CardViewExample', () => App);
+AppRegistry.registerComponent('CardViewExample', () => Test);
