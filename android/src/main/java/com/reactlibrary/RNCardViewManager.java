@@ -49,10 +49,45 @@ public class RNCardViewManager extends ViewGroupManager<RNCardView> {
     }
 
     @Override
+    public View getChildAt(RNCardView parent, int index) {
+        View content = parent.getChildAt(0);
+        if (content != null && content instanceof ReactViewGroup) {
+            return ((ReactViewGroup) content).getChildAt(index);
+        }
+        return null;
+    }
+
+    @Override
+    public int getChildCount(RNCardView parent) {
+        View content = parent.getChildAt(0);
+        if (content != null && content instanceof ReactViewGroup) {
+            return ((ReactViewGroup) content).getChildCount();
+        }
+        return 0;
+    }
+
+
+    @Override
     public void addView(RNCardView parent, View child, int index) {
-        View view = parent.getChildAt(0);
-        if (view != null && view instanceof ReactViewGroup) {
-            ((ReactViewGroup) view).addView(child, index);
+        View content = parent.getChildAt(0);
+        if (content != null && content instanceof ReactViewGroup) {
+            ((ReactViewGroup) content).addView(child, index);
+        }
+    }
+
+    @Override
+    public void removeViewAt(RNCardView parent, int index) {
+        View content = parent.getChildAt(0);
+        if (content != null && content instanceof ReactViewGroup) {
+            ((ReactViewGroup) content).removeViewAt(index);
+        }
+    }
+
+    @Override
+    public void removeAllViews(RNCardView parent) {
+        View content = parent.getChildAt(0);
+        if (content != null && content instanceof ReactViewGroup) {
+            ((ReactViewGroup) content).removeAllViews();
         }
     }
 }
