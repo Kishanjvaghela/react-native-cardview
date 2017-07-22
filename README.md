@@ -32,12 +32,12 @@ Dont need to setup
   - Add `new RNCardViewPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-card-view'
-  	project(':react-native-card-view').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-card-view/android')
+  	include ':react-native-cardview'
+  	project(':react-native-cardview').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-cardview/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-card-view')
+      compile project(':react-native-cardview')
   	```
 ## Usage
 
