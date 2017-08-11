@@ -1,31 +1,18 @@
-
 {
   "name": "react-native-cardview",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/Kishanjvaghela/react-native-card-view.git"
   },
   "description": "A react native card view",
   "keywords": [
-    "react card",
-    "react-native",
-    "react-native-card-view",
-    "react native card",
-    "card",
-    "view",
-    "react-component",
-    "react-native",
-    "ios",
-    "android"
+    "react-native"
   ],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "react-native"
-  ],
   "author": "Kishan Vaghela (kishanjvaghela@gmail.com)",
   "license": "MIT",
   "bugs": {
