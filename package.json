@@ -1,6 +1,6 @@
 {
   "name": "react-native-cardview",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/Kishanjvaghela/react-native-card-view.git"
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/Kishanjvaghela/react-native-card-view",
   "devDependencies": {
-    "prop-types": "^15.6.0",
     "react-native": "^0.41.2"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0"
   }
 }
