@@ -47,20 +47,17 @@ const {data} = this.state;
 return (
 <View style={styles.container}>
 <CardView
-style={{paddingBottom: 20}}
+style={{paddingBottom: 20, width: 300}}
 cardElevation={2}
 cardMaxElevation={2}
 cornerRadius={5}
 >
-<View style={{width: 300}}>
-<View style={{padding: 5,borderBottomColor: '#e3e3e3', borderBottomWidth: 1,}}>
-<Text style={{fontSize: 16}}>User Information</Text>
-</View>
-<View>
-{
-this.renderData(data)
-}
-</View>
+  <View>
+
+<Text style={{fontSize: 16, backgroundColor:'red'}}>User Information</Text>
+<Text style={{backgroundColor:'pink'}}>
+  Test
+</Text>
 </View>
 </CardView>
 </View>
