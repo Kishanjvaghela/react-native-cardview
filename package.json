@@ -19,7 +19,7 @@
     "url": "https://github.com/Kishanjvaghela/react-native-card-view/issues"
   },
   "homepage": "https://github.com/Kishanjvaghela/react-native-card-view",
-  "devDependencies": {
+  "peerDependencies": {
     "react-native": "^0.56.0"
   },
   "dependencies": {
