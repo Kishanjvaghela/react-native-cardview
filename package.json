@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Kishanjvaghela/react-native-card-view",
   "devDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": "^0.56.0"
   },
   "dependencies": {
     "prop-types": "^15.6.0"
