@@ -1,0 +1,5 @@
+rootProject.name = 'CardViewExample'
+include ':react-native-cardview'
+project(':react-native-cardview').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-cardview/android')
+
+include ':app'
