@@ -5,13 +5,15 @@ import {
   StyleSheet,
   Text,
   View,
-  TouchableOpacity
+  TouchableOpacity,
+  Slider
 } from 'react-native';
 
 export default class Test extends Component {
   constructor() {
     super();
     this.state = {
+      value: 1,
       data: [
         { id: 1, addr: 'Hello' },
         { id: 2, addr: 'Hi, Nice to meet you' },
@@ -19,6 +21,13 @@ export default class Test extends Component {
         { id: 4, addr: 'How are you?' }
       ]
     };
+  }
+  change(value) {
+    this.setState(() => {
+      return {
+        value: parseFloat(value)
+      };
+    });
   }
 
   deleteData(id) {
@@ -60,13 +69,15 @@ export default class Test extends Component {
   }
 
   render() {
-    const { data } = this.state;
+    const { data, value } = this.state;
     return (
       <View style={styles.container}>
         <CardView
           style={{
             backgroundColor: 'white'
           }}
+          cardElevation={value}
+          cardMaxElevation={value}
           cornerRadius={5}
           cornerOverlap={false}
         >
@@ -85,6 +96,14 @@ export default class Test extends Component {
             <View>{this.renderData(data)}</View>
           </View>
         </CardView>
+
+        <Slider
+          style={{ width: 300, marginTop: 40 }}
+          step={1}
+          maximumValue={10}
+          onValueChange={this.change.bind(this)}
+          value={value}
+        />
       </View>
     );
   }
