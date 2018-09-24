@@ -14,6 +14,8 @@ Native CardView that compatible for iOS and Android( both lollipop and pre-lolip
 
 `$ npm install react-native-cardview --save`
 
+`$ yarn add react-native-cardview`
+
 ### Mostly automatic installation
 
 `$ react-native link react-native-cardview`
@@ -63,14 +65,26 @@ import CardView from 'react-native-cardview'
 
 ## Attributes
 
-- **cardElevation**
+- **cardElevation** (Android/iOS)
 
 An attribute to set the elevation of the card. This will increase the 'drop-shadow' of the card.
 There can be some performance impact when using a very high elevation value.
 
-- **cardMaxElevation**
+- **cardMaxElevation** (Android)
 
 An attribute to support shadow on pre-lollipop device in android. [cardMaxElevation](http://developer.android.com/intl/zh-tw/reference/android/support/v7/widget/CardView.html)
 
-- **cornerRadius**
+- **cornerRadius** (Android/iOS)
   An attribute to set the radius of the card.
+
+- **useCompatPadding** (Android)
+
+CardView adds additional padding to draw shadows on platforms before Lollipop. [setUseCompatPadding](https://developer.android.com/reference/android/support/v7/widget/CardView.html#setUseCompatPadding(boolean))
+
+- **cornerOverlap** (Android)
+
+On pre-Lollipop platforms, CardView does not clip the bounds of the Card for the rounded corners. Instead, it adds padding to content so that it won't overlap with the rounded corners. You can disable this behavior by setting this field to false.
+
+Setting this value on Lollipop and above does not have any effect unless you have enabled compatibility padding. 
+
+[setPreventCornerOverlap](https://developer.android.com/reference/android/support/v7/widget/CardView.html#setPreventCornerOverlap(boolean))
