@@ -104,6 +104,9 @@ export default class Test extends Component {
           onValueChange={this.change.bind(this)}
           value={value}
         />
+
+        <Text>{`cardElevation = ${value}`}</Text>
+        <Text>{`cardMaxElevation = ${value}`}</Text>
       </View>
     );
   }
