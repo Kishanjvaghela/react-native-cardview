@@ -1,24 +1,43 @@
 {
   "name": "react-native-cardview",
-  "version": "1.1.3",
+  "description": "A react native card view",
+  "main": "index.js",
+  "author": "Kishan Vaghela (kishanjvaghela@gmail.com)",
+  "license": "MIT",
+  "version": "1.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kishanjvaghela/react-native-card-view.git"
+    "url": "https://github.com/Kishanjvaghela/react-native-cardview.git"
   },
-  "description": "A react native card view",
+  "bugs": {
+    "url": "https://github.com/Kishanjvaghela/react-native-cardview/issues"
+  },
+  "homepage": "https://github.com/Kishanjvaghela/react-native-cardview",
   "keywords": [
-    "react-native"
+    "react",
+    "react-native",
+    "react-component",
+    "react-native-card",
+    "react-native-cardview",
+    "react-native-card-view",
+    "card",
+    "card-view",
+    "card-view",
+    "react-native-shadow",
+    "react-native-shadow-view",
+    "react-native-shadowview",
+    "shadow",
+    "shadow-view",
+    "shadowview",
+    "appcompat",
+    "support",
+    "android",
+    "ios",
+    "component"
   ],
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kishan Vaghela (kishanjvaghela@gmail.com)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Kishanjvaghela/react-native-card-view/issues"
-  },
-  "homepage": "https://github.com/Kishanjvaghela/react-native-card-view",
   "peerDependencies": {
     "react-native": "^0.56.0"
   },
