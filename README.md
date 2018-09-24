@@ -1,4 +1,4 @@
-# react-native-card-view [![npm version](https://img.shields.io/npm/v/react-native-cardview.svg?style=flat)](https://www.npmjs.com/package/react-native-cardview) [![npm downloads](https://img.shields.io/npm/dm/react-native-cardview.svg?style=flat-square)](https://www.npmjs.com/package/react-native-cardview)
+# react-native-card-view [![npm version](https://img.shields.io/npm/v/react-native-cardview.svg?style=flat)](https://www.npmjs.com/package/react-native-cardview) [![npm downloads](https://img.shields.io/npm/dm/react-native-cardview.svg?style=flat-square)](https://www.npmjs.com/package/react-native-cardview) ![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-yellow.svg) ![MIT](https://img.shields.io/dub/l/vibe-d.svg)
 
 [![npm](https://nodei.co/npm/react-native-cardview.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/react-native-cardview)
 
@@ -12,9 +12,11 @@ Native CardView that compatible for iOS and Android( both lollipop and pre-lolip
 
 ## Getting started
 
-`$ npm install react-native-cardview --save`
-
-`$ yarn add react-native-cardview`
+```bash
+$ npm install react-native-cardview --save
+# --- or ---
+$ yarn add react-native-cardview
+```
 
 ### Mostly automatic installation
 
