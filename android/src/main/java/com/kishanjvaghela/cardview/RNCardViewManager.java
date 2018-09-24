@@ -22,7 +22,6 @@ public class RNCardViewManager extends ViewGroupManager<RNCardView> {
     @Override
     public RNCardView createViewInstance(ThemedReactContext reactContext) {
         RNCardView cardView = new RNCardView(reactContext);
-        cardView.setUseCompatPadding(true);
         ReactViewGroup reactViewGroup = new ReactViewGroup(reactContext);
         cardView.addView(reactViewGroup);
         return cardView;
@@ -41,6 +40,16 @@ public class RNCardViewManager extends ViewGroupManager<RNCardView> {
     @ReactProp(name = "cardMaxElevation", defaultFloat = 0f)
     public void setCardMaxElevation(RNCardView view, float elevation) {
         view.setRnMaxElevation(elevation);
+    }
+
+    @ReactProp(name = "cornerOverlap")
+    public void setPreventCornerOverlap(RNCardView view, boolean overlap) {
+        view.setPreventCornerOverlap(overlap);
+    }
+
+    @ReactProp(name = "useCompatPadding")
+    public void setUseCompatPadding(RNCardView view, boolean padding) {
+        view.setUseCompatPadding(padding);
     }
 
     @ReactProp(name = "backgroundColor")
