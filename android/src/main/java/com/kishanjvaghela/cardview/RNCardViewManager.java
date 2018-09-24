@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.kishanjvaghela.cardview;
 
 import android.view.View;
 
@@ -65,7 +65,6 @@ public class RNCardViewManager extends ViewGroupManager<RNCardView> {
         }
         return 0;
     }
-
 
     @Override
     public void addView(RNCardView parent, View child, int index) {

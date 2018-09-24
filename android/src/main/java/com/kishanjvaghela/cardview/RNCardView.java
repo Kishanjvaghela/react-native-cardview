@@ -1,4 +1,4 @@
-package com.reactlibrary;
+package com.kishanjvaghela.cardview;
 
 import android.content.Context;
 import android.support.v7.widget.CardView;
@@ -35,6 +35,7 @@ public class RNCardView extends CardView {
     public void setRnMaxElevation(float elevation) {
         setMaxCardElevation(PixelUtil.toPixelFromDIP(elevation));
     }
+
     public void setRnBackgroundColor(int color) {
         setCardBackgroundColor(color);
     }
