@@ -6,10 +6,11 @@ import {
   Text,
   View,
   TouchableOpacity,
-  Slider
+  Slider,
+  SafeAreaView
 } from 'react-native';
 
-export default class Test extends Component {
+export default class Example1 extends Component {
   constructor() {
     super();
     this.state = {
@@ -71,51 +72,64 @@ export default class Test extends Component {
   render() {
     const { data, value } = this.state;
     return (
-      <View style={styles.container}>
-        <CardView
-          style={{
-            backgroundColor: 'white'
-          }}
-          cardElevation={value}
-          cardMaxElevation={value}
-          cornerRadius={5}
-          cornerOverlap={false}
-        >
-          <View style={{ width: 300 }}>
-            <View
-              style={{
-                padding: 10,
-                borderBottomColor: '#e3e3e3',
-                borderBottomWidth: 1
-              }}
-            >
-              <Text style={{ fontSize: 16, color: 'black' }}>
-                User Information
-              </Text>
+      <SafeAreaView style={styles.safeAreaView}>
+        <View style={styles.container}>
+          <CardView
+            style={{
+              backgroundColor: 'white'
+            }}
+            cardElevation={value}
+            cardMaxElevation={value}
+            cornerRadius={5}
+            cornerOverlap={false}
+          >
+            <View style={styles.child}>
+              <View style={styles.titleView}>
+                <Text style={styles.title}>User Information</Text>
+              </View>
+              <View>{this.renderData(data)}</View>
             </View>
-            <View>{this.renderData(data)}</View>
-          </View>
-        </CardView>
+          </CardView>
 
-        <Slider
-          style={{ width: 300, marginTop: 40 }}
-          step={1}
-          maximumValue={10}
-          onValueChange={this.change.bind(this)}
-          value={value}
-        />
+          <Slider
+            style={styles.sliderStyle}
+            step={1}
+            maximumValue={10}
+            onValueChange={this.change.bind(this)}
+            value={value}
+          />
 
-        <Text>{`cardElevation = ${value}`}</Text>
-        <Text>{`cardMaxElevation = ${value}`}</Text>
-      </View>
+          <Text>{`cardElevation = ${value}`}</Text>
+          <Text>{`cardMaxElevation = ${value}`}</Text>
+        </View>
+      </SafeAreaView>
     );
   }
 }
 const styles = StyleSheet.create({
+  safeAreaView: {
+    flex: 1
+  },
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF'
+  },
+  child: {
+    width: 300
+  },
+  titleView: {
+    padding: 10,
+    borderBottomColor: '#e3e3e3',
+    borderBottomWidth: 1
+  },
+  title: {
+    fontSize: 16,
+    color: 'black'
+  },
+  sliderStyle: {
+    width: 300,
+    marginTop: 40
   }
 });
