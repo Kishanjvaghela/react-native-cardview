@@ -12,8 +12,6 @@ var iface = {
     cornerRadius: PropTypes.number,
     cardElevation: PropTypes.number,
     cardMaxElevation: PropTypes.number,
-    cornerOverlap: PropTypes.bool,
-    useCompatPadding: PropTypes.bool,
     ...View.propTypes // include the default view properties
   }
 };
@@ -28,10 +26,20 @@ class CardView extends Component {
       );
       const cornerRadiusPx = PixelRatio.getPixelSizeForLayoutSize(cornerRadius);
       const cos45 = 0.52532198881;
-      const value = maxCardElevationPx * 1.5 + (1 - cos45) * cornerRadiusPx;
+      const paddingBottom =
+        maxCardElevationPx * 1.5 + (1 - cos45) * cornerRadiusPx;
+      const paddingRight = maxCardElevationPx + (1 - cos45) * cornerRadiusPx;
+      // equation from https://developer.android.com/reference/android/support/v7/widget/CardView
       return (
         <RNCardView {...this.props}>
-          <View style={{ paddingBottom: value }}>{this.props.children}</View>
+          <View
+            style={{
+              paddingRight,
+              paddingBottom
+            }}
+          >
+            {this.props.children}
+          </View>
         </RNCardView>
       );
     } else {
