@@ -68,7 +68,9 @@ import CardView from 'react-native-cardview'
 </CardView>
 ```
 
-You can also follow https://reactnativecode.com/creating-card-view-in-android-ios-app-example/
+You can also follow
+- https://reactnativecode.com/creating-card-view-in-android-ios-app-example/
+- http://androidseekho.com/others/reactnative/how-to-use-card-view-in-react-native
 
 ## Attributes
 
