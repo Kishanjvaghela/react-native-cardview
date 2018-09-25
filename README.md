@@ -49,6 +49,9 @@ Dont need to setup
 
 ![N|Example](https://github.com/Kishanjvaghela/react-native-cardview/raw/master/docs/Example-Snapshot.png)
 
+![N|Example](https://github.com/Kishanjvaghela/react-native-cardview/raw/master/docs/ezgif-4-b87dbfaf72.gif)
+
+
 ## Example
 
 Browse the files in the [/example](https://github.com/Kishanjvaghela/react-native-cardview/tree/master/example) directory.
