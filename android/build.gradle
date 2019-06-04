@@ -15,6 +15,10 @@ buildscript {
 
 apply plugin: 'com.android.library'
 
+def safeExtGet(prop, fallback) {
+    rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     buildToolsVersion "${rootProject.ext.buildToolsVersion}"
@@ -35,7 +39,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
-    compile "com.android.support:cardview-v7:${rootProject.ext.supportLibVersion}"
+    implementation 'com.facebook.react:react-native:+'
+    implementation "com.android.support:cardview-v7:${safeExtGet('supportLibVersion', '28.0.0')}"
 }
   
