@@ -36,7 +36,8 @@
     "component"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-patch": "npm version patch"
   },
   "peerDependencies": {
     "react-native": "^0.56.0"
