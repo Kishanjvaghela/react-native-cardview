@@ -4,24 +4,6 @@
 
 Native CardView that compatible for iOS and Android( both lollipop and pre-lolipop).
 
-<br>
-
-<h2 align="center">Professionally supported react-native-cardview is coming soon</h2>
-<p>Tidelift gives software development teams a single source for purchasing and maintaining their software, with professional grade assurances from the experts who know it best, while seamlessly integrating with existing tools.</p>
-
-<div align="center">
-  <a href="">
-    <p align="center">
-      <img src="https://pbs.twimg.com/profile_images/953693944528896006/7pSbgJHd_bigger.jpg" alt="Get supported with Tidelift" />
-    </p>
-    <p align="center">
-     Get supported react-native-cardview with the Tidelift Subscription
-    </p>
-  </a>
-</div>
-
-<br>
-
 ##### [Website](https://kishanjvaghela.github.io/react-native-cardview/)
 
 ##### [Material Design Card Spec](https://www.google.com/design/spec/components/cards.html)

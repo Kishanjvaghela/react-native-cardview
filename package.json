@@ -4,7 +4,7 @@
   "main": "index.js",
   "author": "Kishan Vaghela (kishanjvaghela@gmail.com)",
   "license": "MIT",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/Kishanjvaghela/react-native-cardview.git"
@@ -36,7 +36,9 @@
     "component"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "update-patch": "npm version patch",
+    "publish": "npm publish"
   },
   "peerDependencies": {
     "react-native": "^0.56.0"
