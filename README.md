@@ -42,7 +42,7 @@ Dont need to setup
    ```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
    ```
-     compile project(':react-native-cardview')
+     implementation project(':react-native-cardview')
    ```
 
 ## Usage

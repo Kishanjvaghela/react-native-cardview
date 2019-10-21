@@ -9,14 +9,13 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.5.0'
     }
 }
 
 apply plugin: 'com.android.library'
 
 def safeExtGet(prop, fallback) {
-    println 'A message which is logged at QUIET level'
     rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
 }
 
@@ -25,7 +24,7 @@ android {
     buildToolsVersion safeExtGet('buildToolsVersion', "29.0.2")
 
     defaultConfig {
-        minSdkVersion safeExtGet('minSdkVersion', 15)
+        minSdkVersion safeExtGet('minSdkVersion', 16)
         targetSdkVersion safeExtGet('targetSdkVersion', 29)
         versionCode 1
         versionName "1.0"
