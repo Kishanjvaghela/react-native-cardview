@@ -3,7 +3,7 @@ import {
     ViewStyle,
     ViewProperties,
     TextStyle,
-    ViewProps
+    ViewProps,
 } from 'react-native'
 
 export interface ICardViewProps extends ViewProps {
